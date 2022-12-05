@@ -12,7 +12,7 @@ function getConfig() {
         standingsSheetId: env.STANDINGS_SHEET_ID || '1GPbT3eWyL3pkcqjtys5UUgKeK6U4DSiSfY1zhKLWuh4',
         adminKey: env.ADMIN_KEY||'admin',
         version:2,
-        clientCredentials: env.CLIENT_CREDENTIALS || "{}",
+        clientCredentials: env.CLIENT_SECRETS || "{}",
     }
     // return {
     //     stage: env.STAGE || "Live",

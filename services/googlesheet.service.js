@@ -13,6 +13,7 @@ module.exports = {
 };
 
 async function getDocument(sheetId) {
+    console.info()
     if (!documentLoading[sheetId]) {
         documentLoading[sheetId] = new Promise(resolve => {
             console.info("Loading google docs sheet id:" + sheetId);
