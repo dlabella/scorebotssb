@@ -26,7 +26,7 @@ async function getDocument(sheetId) {
                     return Promise.reject(error);
                 });
             }
-            doc.useServiceAccountAuth(config.clientCredentials).then(() => {
+            doc.useServiceAccountAuth(JSON.parse(config.clientCredentials)).then(() => {
                 doc.loadInfo().then(() => {
                     resolve(doc);
                     documentLoading[sheetId] = null;
