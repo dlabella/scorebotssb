@@ -104,3 +104,5 @@ function getTemplatePath() {
 function getSharedPartialsPath() {
   return getTemplatePath() + path.sep + "shared-partials";
 }
+
+module.exports = app;
