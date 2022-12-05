@@ -1,5 +1,5 @@
 const { GoogleSpreadsheet } = require('google-spreadsheet');
-const credentials = require('../client-secrets.json');
+const config = require('./config.service.js').getConfig();
 const { env } = require('process');
 const axios = require("axios");
 
@@ -26,7 +26,7 @@ async function getDocument(sheetId) {
                     return Promise.reject(error);
                 });
             }
-            doc.useServiceAccountAuth(credentials).then(() => {
+            doc.useServiceAccountAuth(config.clientCredentials).then(() => {
                 doc.loadInfo().then(() => {
                     resolve(doc);
                     documentLoading[sheetId] = null;

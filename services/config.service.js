@@ -11,7 +11,8 @@ function getConfig() {
         usersSheetId: env.USERS_SHEET_ID || '1ulI8TxEglWJqiUTaz_w58Y2_DW0f4pK_CE-nxo6ZKyo',
         standingsSheetId: env.STANDINGS_SHEET_ID || '1GPbT3eWyL3pkcqjtys5UUgKeK6U4DSiSfY1zhKLWuh4',
         adminKey: env.ADMIN_KEY||'admin',
-        version:2
+        version:2,
+        clientCredentials: env.CLIENT_CREDENTIALS || '',
     }
     // return {
     //     stage: env.STAGE || "Live",
