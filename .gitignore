@@ -1,0 +1,5 @@
+node_modules/
+admin.key
+client-secrets.json
+.vscode/
+*.zip

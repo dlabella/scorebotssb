@@ -1,0 +1,178 @@
+<div id="elo-calculator" class="modal full dark">
+    <div class="wrapper">
+        <div class="header modal-title">
+            <div class="modal-header">
+                <i class="material-icons left">calculate</i>
+                <h4>Elo Calculator</h4>
+            </div>
+        </div>
+        <div class="content">
+            <div class="sub-content">
+                <form>
+                    <div class="container">
+                        <div class="row">
+                            <div class="input-field col s12 m4">
+                                <input
+                                    name="winnerElo"
+                                    placeholder="Winner Elo"
+                                    type="number"
+                                    class="validate"
+                                    autocomplete="off"
+                                    data-validation="notEmpty"
+                                />
+                                <label for="winnerElo">Winner Elo</label>
+                                <span
+                                    class="helper-text"
+                                    data-error="Winner Elo?"
+                                ></span>
+                            </div>
+                            <div class="input-field col s12 m4">
+                                <input
+                                    name="loserElo"
+                                    placeholder="Loser Elo"
+                                    type="number"
+                                    class="validate"
+                                    autocomplete="off"
+                                    data-validation="notEmpty"
+                                />
+                                <label for="loserElo">Loser Elo</label>
+                                <span
+                                    class="helper-text"
+                                    data-error="Loser Elo?"
+                                ></span>
+                            </div>
+                            <div class="input-field col s12 m4">
+                                <input
+                                    name="stockDiff"
+                                    placeholder="Stock Diff"
+                                    type="number"
+                                    class="validate"
+                                    autocomplete="off"
+                                    data-validation="notEmpty"
+                                />
+                                <label for="loserElo">Stock Diff</label>
+                                <span
+                                    class="helper-text"
+                                    data-error="Stock Diff?"
+                                ></span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <span
+                                class="col s12 center"
+                                style="text-align: center; width: 100%"
+                                >Results
+                                <hr />
+                            </span>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s6 m3">
+                                <input
+                                    name="newWinnerElo"
+                                    placeholder="Winner Elo"
+                                    type="text"
+                                    class="validate"
+                                    autocomplete="off"
+                                    data-validation="notEmpty"
+                                    readonly
+                                />
+                                <label for="newWinnerElo">Winner Elo</label>
+                            </div>
+                            <div class="input-field col s6 m3">
+                                <input
+                                    name="upset"
+                                    placeholder="Stock Diff"
+                                    type="text"
+                                    class="validate"
+                                    autocomplete="off"
+                                    data-validation="notEmpty"
+                                    readonly
+                                />
+                                <label for="upset">Upset</label>
+                            </div>
+                            <div class="input-field col s6 m3">
+                                <input
+                                    name="increase"
+                                    placeholder="Stock Diff"
+                                    type="text"
+                                    class="validate"
+                                    autocomplete="off"
+                                    data-validation="notEmpty"
+                                    readonly
+                                />
+                                <label for="increase">Increase</label>
+                            </div>
+                            <div class="input-field col s6 m3">
+                                <input
+                                    name="newLoserElo"
+                                    placeholder="Loser Elo"
+                                    type="text"
+                                    class="validate"
+                                    autocomplete="off"
+                                    data-validation="notEmpty"
+                                    readonly
+                                />
+                                <label for="newLoserElo">Loser Elo</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s6 m3">
+                                <input
+                                    name="newWinnerRank"
+                                    placeholder="Winner Rank"
+                                    type="text"
+                                    class="validate"
+                                    autocomplete="off"
+                                    data-validation="notEmpty"
+                                    readonly
+                                />
+                                <label for="newWinnerRank">Winner Rank</label>
+                            </div>
+                            <div class="input-field col s6 m3">
+                                <input
+                                    name="newWinnerRankName"
+                                    placeholder="Rank Name"
+                                    type="text"
+                                    class="validate"
+                                    autocomplete="off"
+                                    data-validation="notEmpty"
+                                    readonly
+                                />
+                            </div>
+                            <div class="input-field col s6 m3">
+                                <input
+                                    name="newLoserRank"
+                                    placeholder="Loser Rank"
+                                    type="text"
+                                    class="validate"
+                                    autocomplete="off"
+                                    data-validation="notEmpty"
+                                    readonly
+                                />
+                                <label for="newLoserRank">Loser Rank</label>
+                            </div>
+                            <div class="input-field col s6 m3">
+                                <input
+                                    name="newLoserRankName"
+                                    placeholder="Rank Name"
+                                    type="text"
+                                    class="validate"
+                                    autocomplete="off"
+                                    data-validation="notEmpty"
+                                    readonly
+                                />
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <a
+                href="#!"
+                class="modal-close waves-effect waves-green btn-flat js-cancel"
+                ><i class="material-icons left"> cancel </i>Close</a
+            >
+        </div>
+    </div>
+</div>

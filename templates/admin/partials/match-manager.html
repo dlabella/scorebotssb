@@ -1,0 +1,104 @@
+<div id="match-manager" class="modal full dark">
+    <div class="wrapper">
+        <div class="header modal-title">
+            <div class="modal-header">
+                <i class="material-icons left">build</i>
+                <h4>Manage Match</h4>
+            </div>
+        </div>
+        <div class="content">
+            <div class="sub-content">
+                <form id="updateStock-match-form">
+                    <div class="row">
+                        <div class="input-field col s12 m4">
+                            
+                            <input
+                                name="winnerTeamAuto"
+                                placeholder="Winner"
+                                type="text"
+                                data-maxheight="280"
+                                autocomplete="off"
+                                class="autocomplete crew"
+                                data-field="winnerAuto"
+                            />
+                            <label for="winnerTeamAuto">Winner</label>
+                            <span class="helper-text" data-error="Winner?"></span>
+                            <input
+                                name="winnerTeam"
+                                placeholder="Winner"
+                                type="hidden"
+                                autocomplete="off"
+                                class="autocomplete crew"
+                                data-field="winner"
+                            />
+                        </div>
+                        <div class="input-field col s12 m4">
+                            <input
+                                name="loserTeamAuto"
+                                placeholder="Loser"
+                                type="text"
+                                data-maxheight="280"
+                                autocomplete="off"
+                                class="autocomplete crew"
+                                data-field="loserAuto"
+                            />
+                            <label for="loserTeamAuto">Loser</label>
+                            <span class="helper-text" data-error="Loser?"></span>
+                            <input
+                                name="loserTeam"
+                                placeholder="Loser"
+                                type="hidden"
+                                autocomplete="off"
+                                class="autocomplete crew"
+                                data-field="loser"
+                            />
+                        </div>
+                        <div class="input-field col s12 m4">
+                            <input 
+                                name="date" 
+                                placeholder="Date" 
+                                type="text" 
+                                class="datepicker" 
+                                autocomplete="off" 
+                                data-field="date"/>
+                            <label for="date">Date</label>
+                            <span class="helper-text" data-error="Match Date?"></span>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="sub-content-main js-dataTable">
+                <table class="highlight thin sticky-header">
+                    <thead>
+                        <tr>
+                            <th data-col="0">Index</th>
+                            <th data-col="1">Date</th>
+                            <th data-col="2">Winner</th>
+                            <th data-col="3">ELO</th>
+                            <th data-col="4">Rank</th>
+                            <th data-col="5">Inc</th>
+                            <th data-col="6">Upset</th>
+                            <th data-col="7">Loser</th>
+                            <th data-col="8">ELO</th>
+                            <th data-col="9">Rank</th>
+                            <th data-col="10">Diff</th>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat js-cancel"><i class="material-icons left">
+                    cancel
+                </i>Cancel</a>
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat js-update-match"><i
+                class="material-icons right">
+                settings_suggest
+            </i>Update Match</a>
+            <a  href="#!" class="modal-close waves-effect waves-green btn-flat js-remove-match"><i
+                class="material-icons right">
+                rule
+            </i>Remove Match</a>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,44 @@
+<div id="remove-crew" class="modal full dark">
+    <div class="wrapper">
+        <div class="header modal-title">
+            <div class="modal-header">
+                <i class="material-icons left">delete_sweep</i>
+                <h4>Remove Crew</h4>
+            </div>
+        </div>
+        <div class="content">
+            <div class="sub-content">
+                <form id="remove-crew-form">
+                    <div class="container">
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input
+                                    name="crewTeamAuto"
+                                    placeholder="Crew"
+                                    type="text"
+                                    data-maxheight="280"
+                                    autocomplete="off"
+                                    class="validate autocomplete crew"
+                                    data-validation="notEmpty"
+                                    data-field="crewAuto"
+                                />
+                                <label for="crewTeamAuto">Crew</label>
+                                <span class="helper-text" data-error="Crew?"></span>
+                                <input name="crewTag" type="hidden"/>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat js-cancel"><i class="material-icons left">
+                    cancel
+                </i>Cancel</a>
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat js-submit"><i
+                    class="material-icons right">
+                    send
+                </i>Submit</a>
+        </div>
+    </div>
+</div>

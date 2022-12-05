@@ -1,0 +1,209 @@
+<div id="match-insert" class="modal full dark">
+    <div class="wrapper">
+        <div class="header modal-title">
+            <div class="modal-header">
+                <i class="material-icons left">emoji_events</i>
+                <h4>Match Insert</h4>
+            </div>
+        </div>
+        <div class="content">
+            <div class="sub-content">
+                <form id="match-insert-form">
+                    <div class="row">
+                        <div class="col s12 m6">
+                            <div class="input-field col s12">
+                                <input
+                                    name="winnerTeamAuto"
+                                    placeholder="Winner"
+                                    type="text"
+                                    data-maxheight="280"
+                                    autocomplete="off"
+                                    class="validate autocomplete crew"
+                                    data-validation="notEmpty"
+                                    data-field="winnerAuto"
+                                />
+                                <label for="winnerTeamAuto">Winner</label>
+                                <span class="helper-text" data-error="Winner?"></span>
+                                <input
+                                    name="winnerTeam"
+                                    placeholder="Winner"
+                                    type="hidden"
+                                    autocomplete="off"
+                                    class="validate autocomplete crew"
+                                    data-validation="notEmpty"
+                                    data-field="winner"
+                                />
+                            </div>
+                            <div class="input-field col s3">
+                                <input
+                                    name="winnerTeamELO"
+                                    placeholder="--"
+                                    type="text"
+                                    class=""
+                                    autocomplete="off"
+                                    data-field="winnerElo"
+                                    readonly
+                                />
+                                <label for="winnerTeamELO">ELO</label>
+                            </div>
+                            <div class="input-field col s3">
+                                <input
+                                    name="winnerTeamRank"
+                                    placeholder="--"
+                                    type="text"
+                                    autocomplete="off"
+                                    data-field="winnerRank"
+                                    class=""
+                                    readonly
+                                />
+                                <label for="winnerTeamRank">Rank</label>
+                            </div>
+                            <div class="input-field col s3">
+                                <input
+                                    name="winnerTeamIncrease"
+                                    placeholder="--"
+                                    type="text"
+                                    autocomplete="off"
+                                    class=""
+                                    data-field="winnerIncrease"
+                                    readonly
+                                />
+                                <label for="winnerTeamIncrease">Inc</label>
+                            </div>
+                            <div class="input-field col s3">
+                                <input
+                                    name="winnerTeamUpset"
+                                    placeholder="-"
+                                    type="text"
+                                    autocomplete="off"
+                                    data-field="winnerUpset"
+                                    class=""
+                                    readonly
+                                />
+                                <label for="winnerTeamUpset">Upset</label>
+                            </div>
+                            <input
+                                name="winnerTeamPosition"
+                                data-field="winnerPosition"
+                                type="hidden"
+                            />
+                        </div>
+                        <div class="col s12 m6">
+                            <div class="input-field col s12">
+                                <input
+                                    name="loserTeamAuto"
+                                    placeholder="Loser"
+                                    type="text"
+                                    data-maxheight="280"
+                                    autocomplete="off"
+                                    class="validate autocomplete crew"
+                                    data-validation="notEmpty"
+                                    data-field="loserAuto"
+                                />
+                                <label for="loserTeamAuto">Loser</label>
+                                <span class="helper-text" data-error="Loser?"></span>
+                                <input
+                                    name="loserTeam"
+                                    placeholder="Loser"
+                                    type="hidden"
+                                    autocomplete="off"
+                                    class="validate autocomplete crew"
+                                    data-validation="notEmpty"
+                                    data-field="loser"
+                                />
+                            </div>
+                            <div class="input-field col s6">
+                                <input
+                                    name="loserTeamELO"
+                                    placeholder="--"
+                                    type="text"
+                                    class=""
+                                    autocomplete="off"
+                                    data-field="loserElo"
+                                    readonly
+                                />
+                                <label for="loserTeamELO">ELO</label>
+                            </div>
+                            <div class="input-field col s6">
+                                <input
+                                    name="loserTeamRank"
+                                    placeholder="--"
+                                    type="text"
+                                    class=""
+                                    autocomplete="off"
+                                    data-field="loserRank"
+                                    readonly
+                                />
+                                <label for="loserTeamRank">Rank</label>
+                            </div>
+                            <input
+                                name="loserTeamPosition"
+                                data-field="loserPosition"
+                                type="hidden"
+                            />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col s12">
+                            <div class="input-field col s4">
+                                <input
+                                    type="number"
+                                    name="stockDiff"
+                                    placeholder="Result"
+                                    type="text"
+                                    class="validate"
+                                    autocomplete="off"
+                                    data-validation="notEmpty"
+                                    data-field="stockDiff"
+                                />
+                                <label for="stockDiff">Stock Diff</label>
+                                <span class="helper-text" data-error="Stock diff?"></span>
+                            </div>
+                            <div class="input-field col s8">
+                                <input
+                                    name="matchDate"
+                                    placeholder="Date"
+                                    type="text"
+                                    class="datepicker"
+                                    autocomplete="off"
+                                    data-field="date"
+                                />
+                                <label for="matchDate">Match Date</label>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="sub-content-main js-dataTable" style="display: none;">
+                <table class="highlight small thin sticky-header">
+                    <thead>
+                        <th>Index</th>
+                        <th>Winner</th>
+                        <th>Loser</th>
+                        <th>Increase</th>
+                        <th>Upset</th>
+                        <th>Diff</th>
+                        <th class="hide-on-med-and-down">Date</th>
+                        <th>Status</th>
+                    </thead>
+                </table>
+            </div>
+        </div>
+        
+        <div class="modal-footer footer">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat js-cancel"
+                ><i class="material-icons left"> cancel </i>Cancel</a
+            >
+            <a
+                href="#!"
+                class="modal-close waves-effect waves-green btn-flat js-addToBatch"
+                ><i class="material-icons left"> list </i>Add</a
+            >
+            <a
+                href="#!"
+                class="modal-close waves-effect waves-green btn-flat js-submit"
+                ><i class="material-icons right"> send </i>Submit</a
+            >
+        </div>
+    </div>
+</div>

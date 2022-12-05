@@ -1,0 +1,19 @@
+
+.datatable-paging-container{
+    display: flex;
+    align-items: center;
+}
+.datatable-paging-container select {
+    width: 65px;
+    height: 30px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.paging-item{
+    display: flex;
+    align-items: center;
+}
+.datatable-paging.bottom-paging{
+    display: flex;
+    justify-content: center!important;
+}

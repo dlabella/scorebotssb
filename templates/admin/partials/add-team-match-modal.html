@@ -1,0 +1,126 @@
+<div id="team-match-result" class="modal full dark">
+    <div class="wrapper">
+        <div class="header modal-title">
+            <div class="modal-header">
+                <i class="material-icons left">groups</i>
+                <h4>Team Match Result</h4>
+            </div>
+        </div>
+        <div class="content">
+            <div class="sub-content">
+                <form id="team-match-result-form">
+                    <div class="row">
+                        <div class="col s12">
+                            <div class="input-field col s6">
+                                <input
+                                    name="matchDate"
+                                    placeholder="Date"
+                                    type="text"
+                                    class="datepicker"
+                                    autocomplete="off"
+                                    data-field="date"
+                                />
+                                <label for="matchDate">Match Date</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col s12 m6">
+                            <div class="input-field col s12">
+                                <select
+                                    multiple
+                                    searchable
+                                    data-field="winnerCrews"
+                                    data-maxHeight="340px"
+                                    name="winnerTeam"
+                                ></select>
+                                <label>Winner Team</label>
+                            </div>
+                            <div class="input-field col s12">
+                                <select
+                                    multiple
+                                    searchable
+                                    data-field="winnerCrewsMVP"
+                                    data-maxHeight="340px"
+                                    name="winnerMVPS"
+                                ></select>
+                                <label>Winner MVP's</label>
+                            </div>
+                        </div>
+                        <div class="col s12 m6">
+                            <div class="input-field col s12">
+                                <select
+                                    multiple
+                                    searchable
+                                    data-field="loserCrews"
+                                    data-maxHeight="340px"
+                                    name="loserTeam"
+                                ></select>
+                                <label>Loser Team</label>
+                            </div>
+                            <div class="input-field col s12">
+                                <select
+                                    multiple
+                                    searchable
+                                    data-field="loserCrewMVP"
+                                    data-maxHeight="340px"
+                                    name="loserMVPS"
+                                ></select>
+                                <label>Loser MVP's</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <h5 class="winner-scores-header">Winner Scores</h1>
+                        <div class="col s12 js-winner-scores">
+                            <div class="input-field col s3">
+                                <input
+                                    name="teamScore"
+                                    placeholder=""
+                                    type="number"
+                                    class=""
+                                    autocomplete="off"
+                                    data-field="teamScore"
+                                    min="0"
+                                    max="5"
+                                />
+                                <label for="teamScore">Score</label>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="sub-content-main js-dataTable" style="display: none">
+                <table class="highlight small thin sticky-header">
+                    <thead>
+                        <th>Index</th>
+                        <th>Winner</th>
+                        <th>WinnerMVP</th>
+                        <th>Loser</th>
+                        <th>LoserMVP</th>
+                        <th>Addition</th>
+                        <th>Increase</th>
+                        <th>Upset</th>
+                        <th>Diff</th>
+                        <th class="hide-on-med-and-down">Date</th>
+                        <th>Status</th>
+                    </thead>
+                </table>
+            </div>
+        </div>
+
+        <div class="modal-footer footer">
+            <a
+                href="#!"
+                class="modal-close waves-effect waves-green btn-flat js-cancel"
+                ><i class="material-icons left"> cancel </i>Cancel</a
+            >
+            <a
+                href="#!"
+                class="modal-close waves-effect waves-green btn-flat js-submit"
+                ><i class="material-icons right"> send </i>Submit</a
+            >
+        </div>
+    </div>
+</div>

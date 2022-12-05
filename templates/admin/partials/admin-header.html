@@ -1,0 +1,40 @@
+<header>
+    <nav>
+        <div class="nav-wrapper">
+            <a href="#!" class="brand-logo center main-brand">Score Bot <% $stage$ %><img class="main-title-image"
+                    src="img/eve-icon-2.png"></img></a>
+            <a href="#" data-target="mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+                <li><a id='adminOptionsDropdown' class='dropdown-trigger btn' href='#' data-target='adminOptions'>Admin Options</a></li>
+            </ul>
+            <!-- Dropdown Structure -->
+            <ul id='adminOptions' class='dropdown-content'>
+                <li><a class="modal-trigger" data-target="add-crew" class="js-result">
+                    Add Crew<i class="material-icons">group_add</i></a></li>
+                <li><a class="modal-trigger" data-target="rename-crew" class="js-result">
+                    Rename Crew<i class="material-icons">drive_file_rename_outline</i></a></li>
+                <li><a class="modal-trigger" data-target="remove-crew" class="js-result">
+                    Remove Crew<i class="material-icons">delete_sweep</i></a></li>
+                <li><a class="modal-trigger" data-target="match-result" class="js-result">
+                    Add Result<i class="material-icons">emoji_events</i></a></li>
+                <li><a class="modal-trigger" data-target="team-match-result" class="js-result">
+                    Add Team Result<i class="material-icons">groups</i></a></li>
+                <li><a class="modal-trigger" data-target="match-manager" class="js-result">
+                    Manage Match<i class="material-icons">build</i></a></li> 
+            </ul>
+        </div>
+    </nav>
+    <ul class="sidenav" id="mobile">
+        <li><a class="btn modal-trigger" data-target="match-result" class="js-result">Add Result<i class="material-icons left">
+            emoji_events
+        </i></a></li>
+        <li><a class="btn modal-trigger" data-target="match-result" class="js-result">Add Team Result<i class="material-icons left">
+            groups
+        </i></a></li>
+        <li><a class="btn modal-trigger" data-target="elo-calculator" class="js-result">
+            Manage Match<i class="material-icons right">build</i></a></li> 
+        <li><a class="btn modal-trigger" data-target="add-crew" class="js-result">Add Crew</a></li>
+        <li><a class="btn modal-trigger" data-target="rename-crew" class="js-result">Rename Crew</a></li>
+        <% admin-nav-options.html %>
+    </ul>
+</header>

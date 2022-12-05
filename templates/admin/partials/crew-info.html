@@ -1,0 +1,78 @@
+<div id="crew-info" class="modal full dark">
+    <div class="wrapper">
+        <div class="header modal-title">
+            <div class="modal-header">
+                <h4>#</h4>
+                <h4 class="crew-info-position" data-field="Position">-</h4>
+                <h4 class="crew-info-tag" data-field="Tag">-</h4>
+                <h4 class="crew-info-name" data-field="Name">-</h4>
+            </div>
+        </div>
+        <div class="content">
+            <div class="sub-content">
+                <div class="row">
+                    <div class="input-field col s6">
+                        <input
+                            id="crew-info-rank"
+                            type="text"
+                            data-field="Rank"
+                            readonly
+                        />
+                        <label class="active" for="crew-info-rank">Rank</label>
+                    </div>
+                    <div class="col s6 no-left-margin flex-center">
+                        <div class="input-field col s12">
+                            <input
+                                id="crew-info-elo"
+                                type="text"
+                                data-field="ELO"
+                            />
+                            <label class="active" for="crew-info-elo"
+                                >ELO</label
+                            >
+                        </div>
+                        <button id="crew-update-elo" class="col s3 hidden" style="height: 40px;">Update Elo</button>
+                    </div>
+                    <div class="input-field col s6">
+                        <input
+                            id="crew-info-wins"
+                            type="text"
+                            data-field="Wins"
+                            readonly
+                        />
+                        <label class="active" for="crew-info-wins">Wins</label>
+                    </div>
+                    <div class="input-field col s6">
+                        <input
+                            id="crew-info-losses"
+                            type="text"
+                            data-field="Losses"
+                            readonly
+                        />
+                        <label class="active" for="crew-info-losses"
+                            >Losses</label
+                        >
+                    </div>
+                </div>
+            </div>
+            <div id="historytable-container" class="sub-content-main">
+                <% historytable.html %>
+            </div>
+        </div>
+        <div class="modal-footer footer">
+            <a
+                href="#!"
+                class="modal-close waves-effect waves-green btn-flat js-remove-match-history"
+                >Remove Match<i class="material-icons left"> delete </i></a
+            >
+            <a
+                href="#!"
+                class="modal-close waves-effect waves-green btn-flat js-update-match-history"
+                >Update Match<i class="material-icons left"> reply_all </i></a
+            >
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat"
+                >Close<i class="material-icons left"> close </i></a
+            >
+        </div>
+    </div>
+</div>

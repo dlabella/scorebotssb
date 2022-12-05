@@ -1,0 +1,33 @@
+<div class="row main-row">
+    <div class="col s12 main-row-container">
+        <div id="table-container" class="card z-depth-4">
+            <div class="col s12 table-header">
+                <div class="flex-center table-header-left">
+                    <div class="table-title">
+                        <img class="title-image" src="img/smash-ball.png" alt="Standings"/>
+                        <span>Standings</span>
+                    </div>
+                </div>
+                <% table-header-navigation.html %>
+            </div>
+
+            <table class="highlight">
+                <thead>
+                    <tr>
+                        <th>id</th>
+                        <th class="center">#</th>
+                        <th>Tag</th>
+                        <th class="hide-on-med-and-down">Name</th>
+                        <th>Wins</th>
+                        <th>Losses</th>
+                        <th>ELO</th>
+                        <th>Rank</th>
+                    </tr>
+                </thead>
+            </table>
+            <% table-footer-navigation.html %>
+        </div>
+    </div>
+</div>
+<div id="tableLoading"><img src="img/loading.gif" alt="Loading" class="z-depth-4"/></div>
+<% crew-info.html %>

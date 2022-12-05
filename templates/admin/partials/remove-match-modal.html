@@ -1,0 +1,100 @@
+<div id="remove-match" class="modal full dark">
+    <div class="wrapper">
+        <div class="header modal-title">
+            <div class="modal-header">
+                <i class="material-icons left">delete</i>
+                <h4>Remove Match</h4>
+            </div>
+        </div>
+        <div class="content">
+            <div class="sub-content">
+                <form>
+                    <div class="container">
+                        <div class="row">
+                            <div class="input-field col s12 m3">
+                                <input
+                                    name="date"
+                                    placeholder="date"
+                                    type="text"
+                                    autocomplete="off"
+                                    readonly 
+                                />
+                                <label for="date">Date</label>
+                            </div>
+                            <div class="input-field col s12 m3">
+                                <input
+                                    name="winnerTeam"
+                                    placeholder="Winner"
+                                    type="text"
+                                    autocomplete="off"
+                                    readonly
+                                />
+                                <label for="winnerTeam">Winner</label>
+                            </div>
+                            <div class="input-field col s12 m3">
+                                <input
+                                    name="loserTeam"
+                                    placeholder="Loser"
+                                    type="text"
+                                    autocomplete="off"
+                                    readonly
+                                />
+                                <label for="loserTeam">Loser</label>
+                            </div>
+                            <div class="input-field col s12 m3">
+                                <input
+                                    name="stockDiff"
+                                    placeholder="Stock Diff"
+                                    type="number"
+                                    autocomplete="off"
+                                    readonly
+                                />
+                                <label for="stockDiff">Stock Diff</label>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="sub-content-main js-dataTable">
+                <table class="highlight thin sticky-header">
+                    <thead>
+                        <tr>
+                            <th data-col="0">Date</th>
+                            <th data-col="1">Winner</th>
+                            <th data-col="2">ELO</th>
+                            <th data-col="3">Rank</th>
+                            <th data-col="4">Inc</th>
+                            <th data-col="5">Upset</th>
+                            <th data-col="6">Loser</th>
+                            <th data-col="7">ELO</th>
+                            <th data-col="8">Rank</th>
+                            <th data-col="9">Diff</th>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+            <div class="modal-footer">
+                <a
+                    href="#!"
+                    class="
+                        modal-close
+                        waves-effect waves-green
+                        btn-flat
+                        js-cancel
+                    "
+                    ><i class="material-icons left"> cancel </i>Cancel</a
+                >
+                <a
+                    href="#!"
+                    class="
+                        modal-close
+                        waves-effect waves-green
+                        btn-flat
+                        js-submit
+                    "
+                    ><i class="material-icons right"> send </i>Apply</a
+                >
+            </div>
+        </div>
+    </div>
+</div>

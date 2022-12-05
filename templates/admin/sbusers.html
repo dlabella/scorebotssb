@@ -1,0 +1,110 @@
+<html>
+
+<head>
+    <% base-head.html %>
+        <script src="js/scoreBotAddUser.js?v=<% $version$ %>" defer></script>
+</head>
+
+<body class="dark">
+    <header>
+        <nav>
+            <div class="nav-wrapper">
+                <a href="#!" class="brand-logo center">Score Bot</a>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <ul class="left hide-on-med-and-down">
+                    <li><a class="btn modal-trigger" data-target="add-user" class="js-result">Add User<i
+                                class="material-icons left">
+                                account_circle
+                            </i></a></li>
+                </ul>
+            </div>
+        </nav>
+        <ul class="sidenav" id="mobile-demo">
+            <li>
+                <h5 class="center">Actions</h5>
+            </li>
+            <li><a class="btn modal-trigger" data-target="add-user" class="js-result ">Add User<i
+                        class="material-icons right">
+                        account_circle
+                    </i></a></li>
+            <li><a class="btn" href="/sbadmin">Standings<i class="material-icons right">
+                        table_view
+                    </i></a></li>
+            <% admin-nav-options.html %>
+        </ul>
+    </header>
+    <div class="container main-container">
+        <div class="row main-row">
+            <div class="col s12 main-row-container">
+                <div id="user-container" class="card z-depth-4">
+                    <div class="col s12 table-header">
+                        <div class="col s12 m6">
+                            <span class="table-title">Users</span>
+                        </div>
+                        <div class="input-field col m2 hide-on-small-only">
+                            <input placeholder="Filter" id="datatable-filter" type="text" class="validate" />
+                        </div>
+                        <div class="col m4 right-align hide-on-small-only datatable-paging"></div>
+                    </div>
+
+                    <table class="highlight">
+                        <thead>
+                            <tr>
+                                <th>User</th>
+                                <th>Password</th>
+                                <th>Role</th>
+                            </tr>
+                        </thead>
+                    </table>
+                    <div id="tableLoading"><img src="img/loading.gif"></img></div>
+                    <div class="col s12 table-header datatable-paging bottom-paging hide-on-med-and-up"></div>
+                    <div id="add-user" class="modal full dark">
+                        <div class="modal-content">
+                            <div class="modal-title">
+                                <h4>New User</h4>
+                            </div>
+                            <form id="add-user-form">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="input-field col s12">
+                                            <input name="userName" placeholder="Name" id="userName" type="text"
+                                                class="" autocomplete="off" />
+                                            <label for="userName">Name</label>
+                                        </div>
+                                        <div class="input-field col s12">
+                                            <input name="password" placeholder="Tag" id="password" type="text"
+                                                class="" autocomplete="off" />
+                                            <label for="password">Password</label>
+                                        </div>
+                                        <div class="input-field col s12">
+                                            <select name="userRole" id="userRole">
+                                                <option value="" disabled selected>Choose your option</option>
+                                                <option value="user">User</option>
+                                                <option value="admin">Admin</option>
+                                            </select>
+                                            <label>Role</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <a href="#!" class="modal-close waves-effect waves-green btn-flat js-cancel"><i
+                                    class="material-icons left">
+                                    cancel
+                                </i>Cancel</a>
+                            <a href="#!" class="modal-close waves-effect waves-green btn-flat js-submit"><i
+                                    class="material-icons right">
+                                    send
+                                </i>Submit</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <% users-footer.html %>
+</body>
+
+</html>
